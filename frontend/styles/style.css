@@ -1,0 +1,116 @@
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+
+
+
+
+.wrapper {
+ width: 100vw;
+ height: 100vh;
+ background-color: aqua;
+}
+
+.container {
+ width: 100vw;
+ /* background-color: aqua; */
+}
+
+.header_and_nav {
+background-color: rgb(149, 160, 156);
+width: 100vw;
+height: 170px;
+}
+
+.directions {
+background-color: #fff;
+height: 104px;
+display: flex;
+flex-direction: row;
+align-items: end;
+position: relative;
+overflow: hidden;
+}
+
+
+.dir_main,
+.dir_women,
+.dir_men {
+position: relative;
+justify-content: center;
+height: 100%;
+width: 33.35%;
+text-align: center;
+display: flex;
+align-items: center;
+
+
+}
+
+.nav_stat{
+    position: absolute;
+    height: 20px;
+    background-color: rgb(255, 196, 0);
+    width: 33.3%;
+}
+
+.dir_main {
+
+}
+
+.dir_men {
+  /* стили для элемента с классом dir_men */
+}
+
+.searcha_and_login {
+  /* стили для элемента с классом searcha_and_login */
+}
+
+.main_section {
+  /* стили для элемента с классом main_section */
+}
+
+.footer {
+  /* стили для элемента с классом footer */
+}
