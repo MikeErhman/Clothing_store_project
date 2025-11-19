@@ -46,6 +46,18 @@ button {
 /* ##################  Main styles  ###################### */
 
 
+:root{
+  --header-height_btn: 6vh;
+}
+
+
+/* ########################################################## */
+
+
+
+@media screen and (min-height: 100px) {
+
+
 .wrapper {
  width: 100vw;
  height: 100vh;
@@ -118,34 +130,40 @@ cursor: pointer;
   font-size: 20px;
   color: #fff;
   display: flex;
+  height: 5vh;
+  align-items: center;
 
 }
 
 
 .logo_header {
-  height: 40px;
   width: 7vw;
   background-color: #053D5C;
   display: flex;
   position: relative;
-  left: 90px;
+  left: 4vw;
   border-radius: 7px;
   justify-content: center;
   align-items: center;
 }
 
 .search_header {
-  height: 40px;
-  width: 34vw;
+  width: 33vw;
   background-color: #fff;
   display: flex;
   position: relative;
-  left: 370px;
-  /* justify-content: center; */
+  left: 17vw;
+}
+
+.search_header > input {
+  width: 33vw;
+  position: absolute;
+  border: none;
+  color:#053D5C;
+  padding-left: 1vw;
 }
 
 .search_header_btn{
-  height: 40px;
   width: 6vw;
   background-color: #053D5C;
   display: flex;
@@ -157,24 +175,22 @@ cursor: pointer;
 }
 
 .cart_header {
-  height: 40px;
   width: 10vw;
   background-color: #053D5C;
   display: flex;
   position: relative;
-  left: 610px;
+  left: 32vw;
   border-radius: 7px;
   justify-content: center;
   align-items: center;
 }
 
 .login_header {
-  height: 40px;
   width: 10vw;
   background-color: #053D5C;
   display: flex;
   position: relative;
-  left: 660px;
+  left: 35vw;
   border-radius: 7px;
   justify-content: center;
   align-items: center;
@@ -198,3 +214,6 @@ cursor: pointer;
 
 
 
+
+
+}
