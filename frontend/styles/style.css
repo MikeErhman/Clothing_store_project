@@ -43,7 +43,19 @@ button {
 }
 
 
+/* ##################  Main styles  ###################### */
 
+
+:root{
+  --header-height_btn: 6vh;
+}
+
+
+/* ########################################################## */
+
+
+
+@media screen and (min-height: 100px) {
 
 
 .wrapper {
@@ -55,12 +67,13 @@ button {
 .container {
  width: 100vw;
  /* background-color: aqua; */
+ height: 100vh;
 }
 
 .header_and_nav {
 background-color: rgb(149, 160, 156);
 width: 100vw;
-height: 170px;
+height: 200px;
 }
 
 .directions {
@@ -84,14 +97,16 @@ width: 33.35%;
 text-align: center;
 display: flex;
 align-items: center;
+color: #053D5C;
+cursor: pointer;
 
 
 }
 
 .nav_stat{
     position: absolute;
-    height: 20px;
-    background-color: rgb(255, 196, 0);
+    height: 15px;
+    background-color: #053D5C;
     width: 33.3%;
 }
 
@@ -103,14 +118,217 @@ align-items: center;
   /* стили для элемента с классом dir_men */
 }
 
-.searcha_and_login {
-  /* стили для элемента с классом searcha_and_login */
+.search_and_login {
+  background-color: #D9D9D9;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  ;
 }
 
-.main_section {
-  /* стили для элемента с классом main_section */
+.search_and_login > *, .search_and_login > * > *  {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  height: 5vh;
+  align-items: center;
+
 }
+
+
+.logo_header {
+  width: 7vw;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 4vw;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_header {
+  width: 33vw;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  left: 17vw;
+}
+
+.search_header > input {
+  width: 33vw;
+  position: absolute;
+  border: none;
+  color:#053D5C;
+  padding-left: 1vw;
+}
+
+.search_header_btn{
+  width: 6vw;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 35vw;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 15px; */
+}
+
+.cart_header {
+  width: 10vw;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 32vw;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_header {
+  width: 10vw;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 35vw;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ################################# */
+
+.main_section {
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+.catalog_section {
+    width: 70vw;
+    height: 60vh;
+    background-color: gray;
+    display: flex;
+    margin-top: -6vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+.left_vert_column_cat{
+    width: 32%;
+    height: 100%;
+    background-color: coral;
+}
+
+.left_vert_column {
+/* height: 100%; */
+}
+
+
+.autumn_collect_cat {
+    width: 100%;
+    background-color: beige;
+    height: 20vh;
+}
+
+.winter_cloth_cat {
+    width: 100%;
+    background-color: cadetblue;
+    height: 20vh;
+}
+
+.for_kids_cat {
+    width: 100%;
+    background-color: chocolate;
+    height: 20vh;
+}
+
+.right_vert_column {
+    width: 68%;
+    height: 100%;
+    background-color: wheat;
+}
+.up_horiz_row {
+    height: 50%;
+    background-color: azure;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-areas:      
+    "brand mid_col end_col_up"    
+    "brand mid_col end_col_center"
+    "brand mid_col end_col_down";
+}
+
+.brands_cat{
+    background-color: bisque;
+    grid-area: brand;
+}
+
+.accesories_and_sport_cat{
+    background-color: blue;
+    grid-area: mid_col;
+    /* display: flex */
+}
+
+.accesories_cat{
+    background-color: blue;
+    height: 50%;
+}
+
+.stort_cat{
+    background-color: aquamarine;
+   height: 50%;
+}
+
+.up_cloth_cat{
+    background-color: blueviolet;
+    grid-area: end_col_up;
+}
+
+.undervear_cat{
+background-color: brown;
+  grid-area: end_col_center;
+}
+
+.shoes_cat{
+background-color: coral;
+  grid-area: end_col_down;
+}
+
+.down_horiz_row {
+    height: 50%;
+    display: flex;
+}
+  
+
+.for_men{
+    background-color: crimson;
+    height: 100%;
+    width: 50%;  
+}
+
+.for_women{
+    background-color: darkgoldenrod;
+    height: 100%;
+    width: 50%;
+}
+
+
 
 .footer {
   /* стили для элемента с классом footer */
+}
+
+
+
+
+
+
 }

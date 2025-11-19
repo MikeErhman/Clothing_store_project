@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style_popupPayment.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    
 
 </head>
 <body>
@@ -13,15 +15,119 @@
         <div class="container">
             <div class="header_and_nav">
                 <nav class="directions">
-                    <div class="dir_main"><h2>Главная</h2> </div>
-                    <div class="dir_women"><h2>Женщинам</h2></div>
-                    <div class="dir_men"><h2>Мужчинам</h2></div>
+                    <div class="dir_main"><h2><a href="#">Главная</a></h2> </div>
+                    <div class="dir_women"><h2><a href="#">Женщинам</a></h2></div>
+                    <div class="dir_men"><h2><a href="#">Мужчинам</a></h2></div>
                     <div class="nav_stat"></div>
                 </nav>
-                <search class="searcha_and_login"></search>
+                <search class="search_and_login">
+                  <button class="logo_header"><a href="#"><h4>Logo</h4></a></button>
+                  <div class="search_header"><input type="text"> <button class="search_header_btn"><a href="#"><h4>Поиск</h4></a></button></div>
+                  <button class="cart_header"><a href="#"><h4>Корзина</h4></a></button>
+                  <button class="login_header"><a href="#">Вход<h4></h4></a></button>
+                </search>
+            </div>
+
+<div class="popupShadow no_show">			
+				<div class="popupPayment">
+				<div class="popupPayment_title">
+					<div class="popupPayment_title_imgAndText">
+						<img src="../images/book_images/65834170.jpg" id="book_image" alt="">
+						<div class="popupPayment_title_text">
+							<h2>Книга дня</h2>
+							<p id="popupNameBook">Читайте людей как книгу. Как анализировать, понимать и предсказывать эмоции, мысли, намерения и поведение людей</p>
+							<p id="popupTitleBook">
+								Описание книги<br>
+								В этой книге Патрика Кинга, автора мировых бестселлеров в области 
+								навыков социальной коммуникации, рассмотрены способы, с помощью которых можно развить умение «читать» и анализировать людей, их характер, поведение, мотивацию, невысказанные намерения. Этот навык бесценен в социуме.
+							</p>
+						</div>
+					</div>
+						<div class="buy_form">
+							<div class="table_prices">
+								<table>
+									<tr>
+										<th class="th_price_book" >Стоимость книги</th>
+										<th class="th_sum">2099р</th>
+									</tr>
+									<tr>
+										<th class="th_price_book" >Скидка 50%</th>
+										<th class="th_sum">1999р</th>
+									</tr>
+									<tr>
+										<th class="th_price_book" >Начисление бонусов</th>
+										<th class="th_sum">99р.</th>
+									</tr>
+								</table>
+								<div class="horLine"></div>
+									<div class="final_price">
+										<p class="final_price_text">Итого</p>
+										<p class="final_price_num">1000р.</p>
+									</div>
+							</div>
+						</div>
+				</div>
+				<div class="popupPayment_buyForm">
+					<h4 id="h4_description">Быстрая оплата через СБ Онлайн</h4>
+					<div class="inputAndButton">
+						<p id="p_form_description" >Введите номер</p>
+						<input type="text" class="formInput" placeholder="+7 XXX-XXX-XX-XX">
+						<button class="formInput_button">Оплатить</button>
+					</div>
+				</div>
+				<div class="popupPayment_buyType">
+					<div class="popupPayment_buyForm_item" id="buyType_card">
+						<img src="../images/logoVisa_Mast_Mir.png" id="buyType_card-img" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item" id="buyTupe_sberPay">
+						<img src="../images/sberPay.jpg" id="buyType_sberPay-img" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item" id="buyTupe_payPal">
+						<img src="../images/paypal.png" id="buyType_paypal-img" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item" id="buyTupe_youMoney">
+						<img src="../images/yuoMoney.png" id="buyType_youModey-img" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item" id="buyTupe_other">
+						<p class="buy_buyType_text">
+							Оплата другими способами...
+						</p>	
+						<img src="../images/qiwiwi.png" class="popupPayment_buyType-icon" alt="">
+						<img src="../images/fk.png" class="popupPayment_buyType-icon" alt="">
+						<p class="dotes">. . .</p>
+
+					</div>
+				</div>		
+			</div>
             </div>
             <section class="main_section">
-
+                <div class="catalog_section">
+                    <div class="left_vert_column_cat">
+                        <div class="left_vert_column">
+                            <div class="autumn_collect_cat"></div>
+                            <div class="winter_cloth_cat"></div>
+                            <div class="for_kids_cat"></div>
+                        </div>
+                    </div>
+                    <div class="right_vert_column">
+                        <div class="up_horiz_row">
+                            <div class="brands_cat"></div>
+                            <div class="accesories_and_sport_cat">
+                                <div class="accesories_cat"></div>
+                                <div class="stort_cat"></div>
+                            </div>
+                            <div class="up_cloth_cat"></div>
+                            <div class="undervear_cat"></div>
+                            <div class="shoes_cat"></div>
+                        </div>
+                        <div class="down_horiz_row">
+                            <div class="for_men"></div>
+                            <div class="for_women"></div>
+                        </div>
+                    </div>
+            
+                   
+                </div>
             </section>
             <footer>    
 
