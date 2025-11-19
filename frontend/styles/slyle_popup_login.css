@@ -1,0 +1,54 @@
+.popupLogin{
+    width: 60vw;
+    height: 70vh;
+    position: fixed;
+    z-index: 15;
+    top: 16vh;
+    left: 20vw;
+    border-radius: 1vw;
+    background-color: whitesmoke;
+    display: flex;
+}
+    
+.img_log{
+    background-color: coral;
+    height: 100%;
+    width: 50%;
+    border-radius: 1vw 0vw 0vw 1vw;
+}
+.form_log{
+    width: 50%;
+    height: 100%;
+    background-color: crimson;
+    border-radius: 0vw 1vw 1vw 0vw;
+}
+
+    
+.popupShadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 14;
+    background-color: rgba(54, 54, 54, 0.78);
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.show_animation{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+
+}
+
+.no_show{
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    visibility: hidden;
+
+    
+}
+
+
