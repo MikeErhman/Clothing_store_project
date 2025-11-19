@@ -200,12 +200,127 @@ cursor: pointer;
 
 /* ################################# */
 
-
-
-
 .main_section {
-  /* стили для элемента с классом main_section */
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+.catalog_section {
+    width: 70vw;
+    height: 60vh;
+    background-color: gray;
+    display: flex;
+    margin-top: -6vh;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
+
+
+.left_vert_column_cat{
+    width: 32%;
+    height: 100%;
+    background-color: coral;
+}
+
+.left_vert_column {
+/* height: 100%; */
+}
+
+
+.autumn_collect_cat {
+    width: 100%;
+    background-color: beige;
+    height: 20vh;
+}
+
+.winter_cloth_cat {
+    width: 100%;
+    background-color: cadetblue;
+    height: 20vh;
+}
+
+.for_kids_cat {
+    width: 100%;
+    background-color: chocolate;
+    height: 20vh;
+}
+
+.right_vert_column {
+    width: 68%;
+    height: 100%;
+    background-color: wheat;
+}
+.up_horiz_row {
+    height: 50%;
+    background-color: azure;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-areas:      
+    "brand mid_col end_col_up"    
+    "brand mid_col end_col_center"
+    "brand mid_col end_col_down";
+}
+
+.brands_cat{
+    background-color: bisque;
+    grid-area: brand;
+}
+
+.accesories_and_sport_cat{
+    background-color: blue;
+    grid-area: mid_col;
+    /* display: flex */
+}
+
+.accesories_cat{
+    background-color: blue;
+    height: 50%;
+}
+
+.stort_cat{
+    background-color: aquamarine;
+   height: 50%;
+}
+
+.up_cloth_cat{
+    background-color: blueviolet;
+    grid-area: end_col_up;
+}
+
+.undervear_cat{
+background-color: brown;
+  grid-area: end_col_center;
+}
+
+.shoes_cat{
+background-color: coral;
+  grid-area: end_col_down;
+}
+
+.down_horiz_row {
+    height: 50%;
+    display: flex;
+}
+  
+
+.for_men{
+    background-color: crimson;
+    height: 100%;
+    width: 50%;  
+}
+
+.for_women{
+    background-color: darkgoldenrod;
+    height: 100%;
+    width: 50%;
+}
+
+
 
 .footer {
   /* стили для элемента с классом footer */
