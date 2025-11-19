@@ -43,7 +43,7 @@ button {
 }
 
 
-
+/* ##################  Main styles  ###################### */
 
 
 .wrapper {
@@ -55,12 +55,13 @@ button {
 .container {
  width: 100vw;
  /* background-color: aqua; */
+ height: 100vh;
 }
 
 .header_and_nav {
 background-color: rgb(149, 160, 156);
 width: 100vw;
-height: 170px;
+height: 200px;
 }
 
 .directions {
@@ -84,14 +85,16 @@ width: 33.35%;
 text-align: center;
 display: flex;
 align-items: center;
+color: #053D5C;
+cursor: pointer;
 
 
 }
 
 .nav_stat{
     position: absolute;
-    height: 20px;
-    background-color: rgb(255, 196, 0);
+    height: 15px;
+    background-color: #053D5C;
     width: 33.3%;
 }
 
@@ -103,9 +106,85 @@ align-items: center;
   /* стили для элемента с классом dir_men */
 }
 
-.searcha_and_login {
-  /* стили для элемента с классом searcha_and_login */
+.search_and_login {
+  background-color: #D9D9D9;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  ;
 }
+
+.search_and_login > *, .search_and_login > * > *  {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+
+}
+
+
+.logo_header {
+ height: 50px;
+ width: 180px;
+ background-color: #053D5C;
+ display: flex;
+ position: relative;
+ left: 40px;
+ border-radius: 15px;
+ justify-content: center;
+
+}
+
+.search_header {
+  height: 50px;
+  width: 1200px;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  left: 450px;
+  /* justify-content: center; */
+ 
+}
+
+.search_header_btn{
+  height: 50px;
+  width: 180px;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 1270px;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 15px; */
+}
+
+.cart_header {
+  height: 50px;
+  width: 240px;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 820px;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.login_header {
+  height: 50px;
+  width: 240px;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 890px;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+
+
+/* ################################# */
+
+
+
 
 .main_section {
   /* стили для элемента с классом main_section */
@@ -114,3 +193,7 @@ align-items: center;
 .footer {
   /* стили для элемента с классом footer */
 }
+
+
+
+
