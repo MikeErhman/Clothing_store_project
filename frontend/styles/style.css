@@ -115,7 +115,7 @@ cursor: pointer;
 }
 
 .search_and_login > *, .search_and_login > * > *  {
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
   display: flex;
 
@@ -123,60 +123,61 @@ cursor: pointer;
 
 
 .logo_header {
- height: 50px;
- width: 180px;
- background-color: #053D5C;
- display: flex;
- position: relative;
- left: 40px;
- border-radius: 15px;
- justify-content: center;
-
-}
-
-.search_header {
-  height: 50px;
-  width: 1200px;
-  background-color: #fff;
-  display: flex;
-  position: relative;
-  left: 450px;
-  /* justify-content: center; */
- 
-}
-
-.search_header_btn{
-  height: 50px;
-  width: 180px;
+  height: 40px;
+  width: 7vw;
   background-color: #053D5C;
   display: flex;
   position: relative;
-  left: 1270px;
+  left: 90px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_header {
+  height: 40px;
+  width: 34vw;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  left: 370px;
+  /* justify-content: center; */
+}
+
+.search_header_btn{
+  height: 40px;
+  width: 6vw;
+  background-color: #053D5C;
+  display: flex;
+  position: relative;
+  left: 35vw;
   justify-content: center;
   align-items: center;
   /* border-radius: 15px; */
 }
 
 .cart_header {
-  height: 50px;
-  width: 240px;
+  height: 40px;
+  width: 10vw;
   background-color: #053D5C;
   display: flex;
   position: relative;
-  left: 820px;
-  border-radius: 15px;
+  left: 610px;
+  border-radius: 7px;
   justify-content: center;
+  align-items: center;
 }
 
 .login_header {
-  height: 50px;
-  width: 240px;
+  height: 40px;
+  width: 10vw;
   background-color: #053D5C;
   display: flex;
   position: relative;
-  left: 890px;
-  border-radius: 15px;
+  left: 660px;
+  border-radius: 7px;
   justify-content: center;
+  align-items: center;
 }
 
 
