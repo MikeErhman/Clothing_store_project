@@ -55,13 +55,13 @@ button {
 
 
 
-@media screen and (min-height: 100px) {
+
 
 
 .wrapper {
  width: 100vw;
  height: 100vh;
- background-color: aqua;
+ background-color: #FDFBEE;
 }
 
 .container {
@@ -73,12 +73,12 @@ button {
 .header_and_nav {
 background-color: rgb(149, 160, 156);
 width: 100vw;
-height: 200px;
+height: 8vw;
 }
 
 .directions {
 background-color: #fff;
-height: 104px;
+height: 5vw;
 display: flex;
 flex-direction: row;
 align-items: end;
@@ -99,15 +99,16 @@ display: flex;
 align-items: center;
 color: #053D5C;
 cursor: pointer;
+font-size: 1.1vw;
 
 
 }
 
 .nav_stat{
-    position: absolute;
-    height: 15px;
-    background-color: #053D5C;
-    width: 33.3%;
+  position: absolute;
+  height: .7vw;
+  background-color: #053D5C;
+  width: 33.3%;
 }
 
 .dir_main {
@@ -123,14 +124,14 @@ cursor: pointer;
   height: 48%;
   display: flex;
   align-items: center;
-  ;
+  
 }
 
 .search_and_login > *, .search_and_login > * > *  {
   font-size: 20px;
   color: #fff;
   display: flex;
-  height: 5vh;
+  height: 2.5vw;
   align-items: center;
 
 }
@@ -210,13 +211,17 @@ cursor: pointer;
 
 
 .catalog_section {
-    width: 70vw;
-    height: 60vh;
+    width: 78vw;
+    height: 68vh;
     background-color: gray;
     display: flex;
-    margin-top: -6vh;
+    margin-top: 3vh;
     /* align-items: center; */
     /* justify-content: center; */
+}
+
+.catalog_section > * > * > *, .catalog_section > * > * {
+  border: .2vw solid whitesmoke;
 }
 
 
@@ -231,28 +236,36 @@ cursor: pointer;
 }
 
 
-.autumn_collect_cat {
+.autumn_collect  {
     width: 100%;
-    background-color: beige;
-    height: 20vh;
+    background-image: url(/images/autumn_collect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 22vh;
 }
 
-.winter_cloth_cat {
-    width: 100%;
-    background-color: cadetblue;
-    height: 20vh;
+.winter_cloth  {
+  background-image: url(/images/winter_cloth.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 23vh;
 }
 
-.for_kids_cat {
+.for_kids  {
+  background-image: url(/images/kids_kloth.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
     width: 100%;
-    background-color: chocolate;
-    height: 20vh;
+    height: 23vh;
 }
 
 .right_vert_column {
     width: 68%;
     height: 100%;
-    background-color: wheat;
 }
 .up_horiz_row {
     height: 50%;
@@ -266,9 +279,12 @@ cursor: pointer;
     "brand mid_col end_col_down";
 }
 
-.brands_cat{
-    background-color: bisque;
-    grid-area: brand;
+.brands {
+  background-image: url(/images/brands.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: brand;
 }
 
 .accesories_and_sport_cat{
@@ -277,47 +293,102 @@ cursor: pointer;
     /* display: flex */
 }
 
-.accesories_cat{
-    background-color: blue;
-    height: 50%;
+.accesories {
+  background-image: url(/images/accesories.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  border-bottom: .2vw solid whitesmoke;
 }
 
-.stort_cat{
-    background-color: aquamarine;
-   height: 50%;
+.sport {
+  background-image: url(/images/sport.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50%;
 }
 
-.up_cloth_cat{
-    background-color: blueviolet;
-    grid-area: end_col_up;
+.up_cloth {
+  background-image: url(/images/up_cloth.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: end_col_up;
 }
 
-.undervear_cat{
-background-color: brown;
+.undervear {
+  background-image: url(/images/undervear.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   grid-area: end_col_center;
 }
 
-.shoes_cat{
-background-color: coral;
+.shoes {
+  background-image: url(/images/shoes.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   grid-area: end_col_down;
 }
 
 .down_horiz_row {
-    height: 50%;
-    display: flex;
+  height: 50%;
+  display: flex;
 }
   
 
-.for_men{
-    background-color: crimson;
-    height: 100%;
-    width: 50%;  
+.for_men {
+  background-image: url(/images/for_men.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 50%;  
 }
 
 .for_women{
-    background-color: darkgoldenrod;
-    height: 100%;
-    width: 50%;
+  background-image: url(/images/for_women.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 50%; 
+}
+
+
+.cat_name {  
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 50%);
+    font-size: 2vw;
+    width: 10vw;
+    height: 3vw;
+    margin: auto;
+    position: relative;
+    top: 25%;
+    border: none;
+}
+
+.cat_name-acces, .cat_name-sport{
+  color: whitesmoke;
+  background-color: rgba(255, 255, 255, 50%);
+  font-size: 2vw;
+  width: 10vw;
+  height: 3vw;
+  position: relative;
+  top: 25%;
+  left: 16%;
+  
+}
+
+.cat_name-sport{
+
+}
+
+.accesories_and_sport_cat {
+  /* padding-top: 2vw; */
 }
 
 
@@ -331,4 +402,3 @@ background-color: coral;
 
 
 
-}
