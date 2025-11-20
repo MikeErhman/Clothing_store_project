@@ -73,12 +73,12 @@ button {
 .header_and_nav {
 background-color: rgb(149, 160, 156);
 width: 100vw;
-height: 200px;
+height: 8vw;
 }
 
 .directions {
 background-color: #fff;
-height: 104px;
+height: 5vw;
 display: flex;
 flex-direction: row;
 align-items: end;
@@ -105,10 +105,10 @@ font-size: 1.1vw;
 }
 
 .nav_stat{
-    position: absolute;
-    height: 15px;
-    background-color: #053D5C;
-    width: 33.3%;
+  position: absolute;
+  height: .7vw;
+  background-color: #053D5C;
+  width: 33.3%;
 }
 
 .dir_main {
@@ -131,7 +131,7 @@ font-size: 1.1vw;
   font-size: 20px;
   color: #fff;
   display: flex;
-  height: 5vh;
+  height: 2.5vw;
   align-items: center;
 
 }
@@ -299,6 +299,7 @@ font-size: 1.1vw;
   background-position: center;
   background-size: cover;
   height: 50%;
+  border-bottom: .2vw solid whitesmoke;
 }
 
 .stort_cat{
