@@ -78,6 +78,16 @@ right: 8.5vw;
 color:  #053D5C;
 }
 
+.btn_log{
+    margin-left: 3.5vw;
+    margin-top: 2vw;
+    width: 8vw;
+    background-color: #053D5C;
+    height: 3vw;
+    color: white;
+    /* border-radius: 1vw; */
+}
+
 
 
     
