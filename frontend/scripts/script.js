@@ -48,19 +48,23 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
     const data = Object.fromEntries(formData); // { email: "...", password: "..." }
 
     try {
-        const response = await fetch('http://localhost:3000/register', {
+
+         const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        // const response = await fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
-        });
+        }); 
+
 
         const result = await response.json();
 
         if (response.ok) {
             alert('Регистрация успешна!');
-            console.log(result.message);
+            // console.log(result.message);
+            console.log(result);
         } else {
             alert('Ошибка: ' + result.message);
         }
