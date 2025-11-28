@@ -49,7 +49,7 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
 
     try {
 
-         const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+         const response = await fetch('http://localhost:3100/register', {
         // const response = await fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
