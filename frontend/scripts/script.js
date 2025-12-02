@@ -23,22 +23,6 @@ document.querySelector('#close_popup').addEventListener('click', (event) => {
 });
 
 
-// Простой GET-запрос
-// fetch('https://jsonplaceholder.typicode.com/users')
-//   .then(response => {
-//     if (!response.ok) throw new Error(`Ошибка сети: ${response.status}`);
-//     return response.json(); // преобразуем тело ответа в JSON
-// }).then(data => console.log(data)) // выводим полученные данные
-//   .catch(error => console.error('Ошибка:', error));
-
-//   const data1 = { 
-//     title: 'foo', body: 'bar', userId: 1 };
-//     fetch('https://jsonplaceholder.typicode.com/posts', 
-//         {  method: 'POST',  headers: {    'Content-Type': 'application/json'  },
-//   body: JSON.stringify(data1)})
-//   .then(response => response.json())
-//   .then(json => console.log(json))
-//   .catch(err => console.error(err));// scripts/script.js
 
 document.querySelector('.form_log').addEventListener('submit', async (event) => {
     event.preventDefault(); // Не перезагружать страницу
@@ -71,7 +55,7 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
     
 
     } catch (error) {
-        alert('Ошибка подключения к серверу');
+        // alert('Ошибка подключения к серверу');
         console.error('Ошибка:', error);
     }
 });
@@ -93,7 +77,7 @@ async function getUsers() {
     
 
     } catch (error) {
-        alert('Ошибка подключения к серверу');
+        // alert('Ошибка подключения к серверу');
         console.error('Ошибка:', error)};
 
     }
