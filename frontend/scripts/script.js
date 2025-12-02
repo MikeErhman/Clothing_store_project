@@ -49,7 +49,7 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
 
     try {
 
-         const response = await fetch('http://localhost:3100/register', {
+         const response = await fetch('http://localhost:3100/api/register', {
         // const response = await fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
@@ -68,9 +68,34 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
         } else {
             alert('Ошибка: ' + result.message);
         }
+    
 
     } catch (error) {
         alert('Ошибка подключения к серверу');
         console.error('Ошибка:', error);
     }
 });
+
+async function getUsers() {
+    try {
+
+         const response1 = await fetch('http://localhost:3100/api/users')
+
+        const result1 = await response1.json();
+
+        if (response1.ok) {
+            alert('Данные всех пользователей');
+            // console.log(result.message);
+            console.log(result1);
+        } else {
+            alert('Ошибка: ' + result1.message);
+        }
+    
+
+    } catch (error) {
+        alert('Ошибка подключения к серверу');
+        console.error('Ошибка:', error)};
+
+    }
+
+    getUsers()

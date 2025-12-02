@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors')
 const app = express();
+require('dotenv').config();
+const mongoose = require('mongoose');
 const port = 3100;
 ; // импорт модуля CORS
 // Включаем CORS для всех запросов
@@ -59,3 +61,19 @@ app.get('/users', (req, res) => {
 app.listen(port, () => {
   console.log(`Mock server запущен на http://localhost:${port}`);
 });
+
+
+
+
+
+
+
+// Используем переменную MONGO_URI из .env файла
+const uri = process.env.MONGO_URI;
+
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB connection error:', err));
