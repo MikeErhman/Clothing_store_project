@@ -23,22 +23,6 @@ document.querySelector('#close_popup').addEventListener('click', (event) => {
 });
 
 
-// Простой GET-запрос
-// fetch('https://jsonplaceholder.typicode.com/users')
-//   .then(response => {
-//     if (!response.ok) throw new Error(`Ошибка сети: ${response.status}`);
-//     return response.json(); // преобразуем тело ответа в JSON
-// }).then(data => console.log(data)) // выводим полученные данные
-//   .catch(error => console.error('Ошибка:', error));
-
-//   const data1 = { 
-//     title: 'foo', body: 'bar', userId: 1 };
-//     fetch('https://jsonplaceholder.typicode.com/posts', 
-//         {  method: 'POST',  headers: {    'Content-Type': 'application/json'  },
-//   body: JSON.stringify(data1)})
-//   .then(response => response.json())
-//   .then(json => console.log(json))
-//   .catch(err => console.error(err));// scripts/script.js
 
 document.querySelector('.form_log').addEventListener('submit', async (event) => {
     event.preventDefault(); // Не перезагружать страницу
@@ -49,7 +33,7 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
 
     try {
 
-         const response = await fetch('http://localhost:3100/register', {
+         const response = await fetch('http://localhost:3100/api/register', {
         // const response = await fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
@@ -68,9 +52,34 @@ document.querySelector('.form_log').addEventListener('submit', async (event) => 
         } else {
             alert('Ошибка: ' + result.message);
         }
+    
 
     } catch (error) {
-        alert('Ошибка подключения к серверу');
+        // alert('Ошибка подключения к серверу');
         console.error('Ошибка:', error);
     }
 });
+
+async function getUsers() {
+    try {
+
+         const response1 = await fetch('http://localhost:3100/api/users')
+
+        const result1 = await response1.json();
+
+        if (response1.ok) {
+            alert('Данные всех пользователей');
+            // console.log(result.message);
+            console.log(result1);
+        } else {
+            alert('Ошибка: ' + result1.message);
+        }
+    
+
+    } catch (error) {
+        // alert('Ошибка подключения к серверу');
+        console.error('Ошибка:', error)};
+
+    }
+
+    getUsers()

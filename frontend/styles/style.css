@@ -218,6 +218,7 @@ font-size: 1.1vw;
     margin-top: 3vh;
     /* align-items: center; */
     /* justify-content: center; */
+    line-height: 2vw;
 }
 
 .catalog_section > * > * > *, .catalog_section > * > * {
@@ -359,30 +360,52 @@ font-size: 1.1vw;
 }
 
 
-.cat_name {  
+.cat_name {      
     color: whitesmoke;
     background-color: rgba(255, 255, 255, 50%);
-    font-size: 2vw;
+    font-size: 1.7vw;
+    width: 10vw;
+    height: 4vw;
+    margin: auto;
+    position: relative;
+    top: 19%;
+    border: none;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+
+.cat_name-acces, .cat_name-sport{
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 50%);
+    font-size: 1.7vw;
+    width: 10vw;
+    height: 4vw;
+    margin: auto;
+    position: relative;
+    top: 19%;
+    border: none;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.sm_cat{
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 50%);
+    font-size: 1.2vw;
     width: 10vw;
     height: 3vw;
     margin: auto;
     position: relative;
-    top: 25%;
+    top: 19%;
     border: none;
+    text-align: center;
+    align-content: center;
 }
-
-.cat_name-acces, .cat_name-sport{
-  color: whitesmoke;
-  background-color: rgba(255, 255, 255, 50%);
-  font-size: 2vw;
-  width: 10vw;
-  height: 3vw;
-  position: relative;
-  top: 25%;
-  left: 16%;
-  
-}
-
 .cat_name-sport{
 
 }
