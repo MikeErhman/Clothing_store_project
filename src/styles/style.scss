@@ -166,11 +166,12 @@ button {
 }
 
 .recommends_section{
-	height: 30vh;
-	width: 77.5vw;
+	height: 40vh;
+	width: 81.5vw;
 	// align-self: center;
 	margin: 0 auto 0 auto ;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	gap: 1vw;
 	.recommend_item{
 		width: 15.5vw;
@@ -198,14 +199,19 @@ button {
 			background-color: rgba(5, 61, 92, 0.5);
 			position: absolute;
 		    width: 4vw;
-    		height: 3vh;
-			top: 90%;
+    		height: 4vh;
+			top: 86%;
 			border-radius: 0 0.8vw 0 0;
 				span{
 					color: whitesmoke;
 					margin-left: 0.4vw;
 				}
-		}
+			
+			}
+			.recommend_descrip{
+				height: 1vw;
+				width: 4vw;
+			}
 	}
 }
 
@@ -370,7 +376,8 @@ button {
 .cat_name-sport {
 }
 footer {
-margin-top: 7vh;
+padding: 2vw 0 0 7vw;
+margin-top: 5vh;
 height: 30vh;
 // width: ;
 background-color:$main_color-blue;
