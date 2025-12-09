@@ -1,0 +1,386 @@
+$main_color-blue: #053D5C;
+
+
+*,
+::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+body {
+	line-height: 1.5;
+	background-color: #fff;
+	color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+button {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+:root {
+	--header-height_btn: 6vh;
+}
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	// background-color: #FDFBEE;
+	
+	h1 {
+		// font-size: 20px;
+		text-align: center;
+		color: $main_color-blue;
+	}
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+}
+.header_and_nav {
+	background-color: rgb(149, 160, 156);
+	width: 100vw;
+	height: 8vw;
+}
+.directions {
+	background-color: #fff;
+	height: 5vw;
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	position: relative;
+	overflow: hidden;
+}
+.dir_main,
+.dir_women,
+.dir_men {
+	position: relative;
+	justify-content: center;
+	height: 100%;
+	width: 33.35%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	color: $main_color-blue;
+	cursor: pointer;
+	font-size: 1.1vw;
+}
+.nav_stat {
+	position: absolute;
+	height: .7vw;
+	background-color: $main_color-blue;
+	width: 33.3%;
+}
+.dir_main {
+}
+.dir_men {
+}
+.search_and_login {
+	background-color: #D9D9D9;
+	height: 48%;
+	display: flex;
+	align-items: center;
+}
+.search_and_login > *, .search_and_login > * > * {
+	font-size: 20px;
+	color: #fff;
+	display: flex;
+	height: 2.5vw;
+	align-items: center;
+}
+.logo_header {
+	width: 7vw;
+	background-color: $main_color-blue;
+	display: flex;
+	position: relative;
+	left: 4vw;
+	border-radius: 7px;
+	justify-content: center;
+	align-items: center;
+}
+.search_header {
+	width: 33vw;
+	background-color: #fff;
+	display: flex;
+	position: relative;
+	left: 17vw;
+	& > input {
+		width: 33vw;
+		position: absolute;
+		border: none;
+		color: $main_color-blue;
+		padding-left: 1vw;
+	}
+}
+.search_header_btn {
+	width: 6vw;
+	background-color: $main_color-blue;
+	display: flex;
+	position: relative;
+	left: 35vw;
+	justify-content: center;
+	align-items: center;
+}
+.cart_header {
+	width: 10vw;
+	background-color: $main_color-blue;
+	display: flex;
+	position: relative;
+	left: 32vw;
+	border-radius: 7px;
+	justify-content: center;
+	align-items: center;
+}
+.login_header {
+	width: 10vw;
+	background-color: $main_color-blue;
+	display: flex;
+	position: relative;
+	left: 35vw;
+	border-radius: 7px;
+	justify-content: center;
+	align-items: center;
+}
+.main_section {
+	height: 73vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recommends_section{
+	height: 30vh;
+	width: 77.5vw;
+	// align-self: center;
+	margin: 0 auto 0 auto ;
+	display: flex;
+	gap: 1vw;
+	.recommend_item{
+		width: 15.5vw;
+		height: 100%;
+		border: 2px solid whitesmoke ;
+		position: relative;
+		overflow: hidden;
+
+
+			.img_rec{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			object-fit: cover;
+			border: none;
+			}
+			a{
+		
+				color: whitesmoke;
+			}
+			div{
+			background-color: rgba(5, 61, 92, 0.5);
+			position: absolute;
+		    width: 4vw;
+    		height: 3vh;
+			top: 90%;
+			border-radius: 0 0.8vw 0 0;
+				span{
+					color: whitesmoke;
+					margin-left: 0.4vw;
+				}
+		}
+	}
+}
+
+.catalog_section {
+	width: 78vw;
+	height: 68vh;
+	display: flex;
+	margin-top: 3vh;
+	line-height: 2vw;
+}
+.catalog_section > * > * > *, .catalog_section > * > * {
+	border: .2vw solid whitesmoke;
+}
+.left_vert_column_cat {
+	width: 32%;
+	height: 100%;
+}
+.left_vert_column {
+}
+.autumn_collect {
+	width: 100%;
+	background-image: url(/images/autumn_collect.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 22vh;
+}
+.winter_cloth {
+	background-image: url(/images/winter_cloth.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 23vh;
+}
+.for_kids {
+	background-image: url(/images/kids_kloth.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 23vh;
+}
+.right_vert_column {
+	width: 68%;
+	height: 100%;
+}
+.up_horiz_row {
+	height: 50%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-areas: "brand mid_col end_col_up"    
+    "brand mid_col end_col_center"
+    "brand mid_col end_col_down";
+}
+.brands {
+	background-image: url(/images/brands.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-area: brand;
+}
+.accesories_and_sport_cat {
+	grid-area: mid_col;
+}
+.accesories {
+	background-image: url(/images/accesories.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 50%;
+	border-bottom: .2vw solid whitesmoke;
+}
+.sport {
+	background-image: url(/images/sport.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 50%;
+}
+.up_cloth {
+	background-image: url(/images/up_cloth.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-area: end_col_up;
+}
+.undervear {
+	background-image: url(/images/undervear.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-area: end_col_center;
+}
+.shoes {
+	background-image: url(/images/shoes.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-area: end_col_down;
+}
+.down_horiz_row {
+	height: 50%;
+	display: flex;
+}
+.for_men {
+	background-image: url(/images/for_men.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 50%;
+}
+.for_women {
+	background-image: url(/images/for_women.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 50%;
+}
+.cat_name {
+	color: whitesmoke;
+	background-color: rgba(255, 255, 255, 50%);
+	font-size: 1.7vw;
+	width: 10vw;
+	height: 4vw;
+	margin: auto;
+	position: relative;
+	top: 19%;
+	border: none;
+	text-align: center;
+	align-content: center;
+}
+.cat_name-acces, .cat_name-sport {
+	color: whitesmoke;
+	background-color: rgba(255, 255, 255, 50%);
+	font-size: 1.7vw;
+	width: 10vw;
+	height: 4vw;
+	margin: auto;
+	position: relative;
+	top: 19%;
+	border: none;
+	text-align: center;
+	align-content: center;
+}
+.sm_cat {
+	color: whitesmoke;
+	background-color: rgba(255, 255, 255, 50%);
+	font-size: 1.2vw;
+	width: 10vw;
+	height: 3vw;
+	margin: auto;
+	position: relative;
+	top: 19%;
+	border: none;
+	text-align: center;
+	align-content: center;
+}
+.cat_name-sport {
+}
+footer {
+margin-top: 7vh;
+height: 30vh;
+// width: ;
+background-color:$main_color-blue;
+color: whitesmoke;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-auto-flow: column;
+	
+	span{
+
+	}
+}
