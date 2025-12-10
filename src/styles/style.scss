@@ -98,7 +98,7 @@ button {
 	align-items: center;
 }
 .search_and_login > *, .search_and_login > * > * {
-	font-size: 20px;
+	font-size: 1.3vw;
 	color: #fff;
 	display: flex;
 	height: 2.5vw;
@@ -129,7 +129,7 @@ button {
 	}
 }
 .search_header_btn {
-	width: 6vw;
+	width: 10vw;
 	background-color: $main_color-blue;
 	display: flex;
 	position: relative;
@@ -157,6 +157,9 @@ button {
 	justify-content: center;
 	align-items: center;
 }
+
+
+
 .main_section {
 	height: 73vh;
 	display: flex;
