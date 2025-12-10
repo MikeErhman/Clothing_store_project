@@ -5,6 +5,14 @@ close_popup = document.querySelector('#close_popup');
 
 arr_of_links_to_login = [login_header,  cart_header]
 
+
+
+let el = document.querySelectorAll('*');
+if(el.offsetWidth > document.documentElement.offsetWidt){
+    console.log(el)
+}
+
+
 arr_of_links_to_login.forEach(element => {
     element.addEventListener('click', (event) => {
     event.preventDefault();
