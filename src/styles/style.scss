@@ -129,6 +129,11 @@ button {
 		padding-left: 1vw;
 	}
 }
+
+   .sandwich_inactive{
+		display: none;
+	}
+
 .search_header_btn {
 	width: 10vw;
 	background-color: $main_color-blue;
@@ -137,6 +142,10 @@ button {
 	left: 35vw;
 	justify-content: center;
 	align-items: center;
+	
+	img{
+		display: none;
+	}
 }
 .cart_header {
 	width: 10vw;
@@ -224,6 +233,9 @@ button {
 	display: flex;
 	margin-top: 3vh;
 	line-height: 2vw;
+}
+.catalog_section-500{
+	display: none;
 }
 .catalog_section > * > * > *, .catalog_section > * > * {
 	border: .2vw solid whitesmoke;
