@@ -1,10 +1,17 @@
 
 let login_header = document.querySelector('.login_header'),
 cart_header = document.querySelector('.cart_header'),
-close_popup = document.querySelector('#close_popup');
+close_popup = document.querySelector('#close_popup'),
+sandwich_state = document.querySelector('#sandwich');
+let sandwich_is_active = document.getElementById("sandwich_is_active")
+
 
 arr_of_links_to_login = [login_header,  cart_header]
 
+
+sandwich_state.addEventListener('click', () => {
+    sandwich_is_active.classList.toggle("sandwich_wrapper")
+})
 
 
 let el = document.querySelectorAll('*');

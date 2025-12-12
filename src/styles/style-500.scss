@@ -98,24 +98,33 @@
 
                     .sandwich_wrapper{
                         display: block;
-                        background-color: rgba(54, 54, 54, 0.8);
-                         height: 100%;
-                         width: 100%;
-                         position: absolute;
-                         z-index: 2;
-                         height: 30%;
+                        background-color:rgba(217, 217, 217, 0.95);
+                        height: 80vw;
+                        width: 65%;
+                        position: absolute;
+                        z-index: 2;
+                        top: 29.1vw;
+
+                    
+                        border-radius: 0 0vw 3vw 0vw;
                      }   
                      .sandwich_menu{
                          color: white;
                          font-size: 4vw;
-                         padding: 9vw 5vw;
+                         height: 20vw;
                          list-style: none;
                          text-decoration: none;
+                         position: absolute;
                      }
                      .sandwich_menu li{
-                         margin: 6vw 0 6vw 3vw ;
-                         font-family: 'Ubuntu', sans-serif;
-                         
+                        margin: 1vw 0 2.5vw 5vw;
+                        font-family: 'Ubuntu', sans-serif;
+                         color: style.$main_color-blue;
+                         background-color: rgba(5, 61, 92, 0.3);
+                        //  border-radius: 1vw;
+                        width: fit-content;
+                        width: calc-size(fit-content, size + 5%);
+                        text-align: center;
                      }
              
                      .sandwich_menu li a{
