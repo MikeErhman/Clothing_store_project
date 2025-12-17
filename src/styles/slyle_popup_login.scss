@@ -91,3 +91,76 @@
 	transition: opacity 0.3s, visibility 0.3s;
 	visibility: hidden;
 }
+
+
+
+@media screen and (max-width: 500px) {
+.popupLogin {
+    width: 118vw;
+    height: 60vh;
+    position: fixed;
+    z-index: 15;
+    top: 16vh;
+    left: 5vw;
+    border-radius: 1.9vw;
+    display: flex;
+}
+	
+        .img_log {
+            background-image: url(/../images/popup_log_img.png);
+            background-repeat: no-repeat;
+            background-position: 0vw -0.5px;
+            background-size: cover;
+            height: 100%;
+            width: 25%;
+            border-radius: 1vw 0vw 0vw 1vw;
+            overflow: hidden;
+        }
+        .form_log{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0vw 4vw 4vw 0vw;
+            position: relative;
+            padding: 5vw 5vw 0 0;
+            padding-left: 5vw;
+		}
+			.form_log > a {
+                    position: absolute;
+                    right: 5%;
+                    top: 4%;
+                    width: 6.5vw !important;
+                }
+                .form_log > h3 {
+                    text-align: center;
+                    font-size: 4.8vw;
+                    margin-top: 12vw;
+                    color: #053D5C;
+                }
+                .form_log > input {
+                    height: 5vh;
+                    width: 100% !important;
+                    border: none;
+                    border-radius: 1.5vw;
+                    background-color: #D9D9D9;
+                    padding-left: 1vw;
+                    color: #053D5C;
+                }
+                .form_log > h3 + input + a {
+                    font-size: 2.5vw;
+                    position: static;
+                    text-align: center;
+                    top: 16vw;
+                    right: 8.5vw;
+                    color: #053D5C;
+                }
+                .btn_log {
+                    margin-left: 14.5vw;
+                    margin-top: 6vw;
+                    width: 19vw;
+                    background-color: #053D5C;
+                    height: 10vw;
+                    color: white;
+                }
+
+}
